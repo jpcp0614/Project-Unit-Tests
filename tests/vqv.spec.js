@@ -23,25 +23,25 @@ describe('3 - Implemente a função `vqv`', () => {
     assert.strictEqual(typeof vqv, 'function');
     assert.strictEqual(typeof vqv('Tunico', 30), 'string');
     assert.strictEqual(
-      vqv('Tunico', 29),
-      'Oi, meu nome é Tunico!\n' +
-        'Tenho 29 anos,\n' +
-        'trabalho muito com programação!\n' +
-        '#VQV!',
-    );
+			vqv('Tunico', 29),
+			`Oi, meu nome é Tunico!
+      Tenho 29 anos,
+      trabalho muito com programação!
+      #VQV!`,
+		);
     assert.strictEqual(
 			vqv('Alberto', 30),
-			'Oi, meu nome é Alberto!\n' +
-				'Tenho 30 anos,\n' +
-				'trabalho muito com programação!\n' +
-				'#VQV!'
+			`Oi, meu nome é Alberto!
+      Tenho 30 anos,
+      trabalho muito com programação!
+      #VQV!`,
 		);
     assert.strictEqual(
 			vqv('Hamaji', 29),
-			'Oi, meu nome é Hamaji!\n' +
-				'Tenho 29 anos,\n' +
-				'trabalho muito com programação!\n' +
-				'#VQV!'
+			`Oi, meu nome é Hamaji!
+      Tenho 29 anos,
+      trabalho muito com programação!
+      #VQV!`
 		);
     assert.strictEqual(vqv(), undefined);
   });
