@@ -19,6 +19,24 @@
   calculator.div(3, 2) // Retorno: 1;
 */
 
-const calculator = {};
+const add = (a, b) => a + b;
+
+const mult = (a, b) => a * b;
+
+const div = (a, b) => {
+  if (a === 0 && b === 0) return 'Tende a infinito';
+  if (a !== 0 && b === 0) return undefined;
+
+  return Math.floor(a / b);
+};
+
+const sub = (a, b) => a - b;
+
+const calculator = {
+  add,
+  mult,
+  div,
+  sub,
+};
 
 module.exports = calculator;
